@@ -20,9 +20,9 @@
 	"license": "MIT",
 	"name": "charon",
 	"scripts": {
-		"build": "yarn webpack",
 		"charon": "node distribution/charon",
 		"postinstall": "ln -fs vendor node_modules",
-		"watch": "yarn webpack --watch"
+		"webpack:build": "yarn webpack",
+		"webpack:watch": "yarn webpack --watch"
 	}
 }
