@@ -1,6 +1,6 @@
 const
-	path = require('path'),
-	root = path.resolve(__dirname),
+	path      = require('path'),
+	root      = path.resolve(__dirname),
 	resources = path.resolve(root, 'resources')
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
 		path: path.resolve(root, 'distribution')
 	},
 	resolve: {
-		modules: [resources]
+		modules: [resources, path.resolve(root, 'vendor')]
 	},
 	target: 'node'
 }
